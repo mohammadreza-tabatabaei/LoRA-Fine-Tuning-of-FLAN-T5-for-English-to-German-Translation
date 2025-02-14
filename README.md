@@ -12,14 +12,6 @@ This project demonstrates **LoRA fine-tuning** of the **FLAN-T5-small** model fo
 ## 📂 Dataset  
 The **WMT16 (de-en)** dataset is loaded from the **Hugging Face Datasets** library.  
 
-## ⚙️ Installation  
-First, install the required dependencies:  
-```bash
-pip install transformers tensorflow datasets tensorflow_addons nltk
-## 🏗 Model Architecture  
-- The **encoder, decoder, and shared layers** of FLAN-T5 are **frozen**.  
-- The **LoRA layer replaces the dense layers** in the model.  
-- **Only LoRA parameters are trainable**, reducing computational cost.  
 
 ## 📊 Performance Evaluation  
 - The model's translations are compared with reference texts using **BLEU score**.  
